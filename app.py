@@ -12,7 +12,7 @@ scat_button = st.checkbox("Construir un gráfico de dispersión")
 
 if hist_button: #al hacer clic en el botón
     #escribir un mensaje
-    st.write("Creación de un histograma para el conjunto de datos de anuncion de venta de automóviles")
+    st.write("Creación de un histograma para el conjunto de datos de anuncios de venta de automóviles")
 
     #crear un histograma
     fig = px.histogram(car_data, x="odometer")
@@ -24,7 +24,7 @@ if hist_button: #al hacer clic en el botón
 
 if scat_button: #al hacer clic en el botón
     #escribir mensaje
-    st.write("Creación de un gráfico de dispersion para el conjunto de datos de anuncions de venta de automóviles")
+    st.write("Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de automóviles")
 
     #crear el gráfico de dispersion
     fig =px.scatter(car_data, x="odometer", y="price")
